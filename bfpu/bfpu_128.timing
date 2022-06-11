@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : bfpu
+Version: L-2016.03-SP2
+Date   : Mon Jan 31 22:46:20 2022
+****************************************
+
+Operating Conditions: fast   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: out_reg[63]
+              (rising edge-triggered flip-flop clocked by idealclock)
+  Endpoint: out_reg[63]
+            (rising edge-triggered flip-flop clocked by idealclock)
+  Path Group: idealclock
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  clock idealclock (rise edge)                       0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  out_reg[63]/CLK (DFFSNQ_X1)              0.00      0.00       0.00 r
+  out_reg[63]/Q (DFFSNQ_X1)                2.53     10.48      10.48 f
+  out[63] (net)                  2                   0.00      10.48 f
+  U1636/ZN (INV_X1)                        2.10      1.87      12.35 r
+  n194 (net)                     1                   0.00      12.35 r
+  U1634/ZN (OAI22_X1)                      6.93      3.41      15.77 f
+  n977 (net)                     1                   0.00      15.77 f
+  out_reg[63]/D (DFFSNQ_X1)                6.93      0.00      15.77 f
+  data arrival time                                            15.77
+
+  clock idealclock (rise edge)                    1000.00    1000.00
+  clock network delay (ideal)                        0.00    1000.00
+  out_reg[63]/CLK (DFFSNQ_X1)                        0.00    1000.00 r
+  library setup time                                -9.04     990.96
+  data required time                                          990.96
+  ------------------------------------------------------------------------------------------
+  data required time                                          990.96
+  data arrival time                                           -15.77
+  ------------------------------------------------------------------------------------------
+  slack (MET)                                                 975.20
+
+
+1

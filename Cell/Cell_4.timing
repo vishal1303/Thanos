@@ -1,0 +1,108 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : Cell
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 17:44:05 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: fast   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: kufpu1/kufpu_stage[0].i_ufpu/last_id_reg[1]
+              (rising edge-triggered flip-flop clocked by idealclock)
+  Endpoint: kufpu1/kufpu_stage[0].i_ufpu/encode_1_reg_reg[6]
+            (rising edge-triggered flip-flop clocked by idealclock)
+  Path Group: idealclock
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock idealclock (rise edge)                                      0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  kufpu1/kufpu_stage[0].i_ufpu/last_id_reg[1]/CLK (DFFSNQ_X1)     0.00     0.00 #     0.00 r
+  kufpu1/kufpu_stage[0].i_ufpu/last_id_reg[1]/Q (DFFSNQ_X1)    76.80    47.59    47.59 r
+  kufpu1/kufpu_stage[0].i_ufpu/N19809 (net)       54                   0.00      47.59 r
+  kufpu1/kufpu_stage[0].i_ufpu/U3927/ZN (INV_X1)            34.49     24.17      71.77 f
+  kufpu1/kufpu_stage[0].i_ufpu/n947 (net)         16                   0.00      71.77 f
+  kufpu1/kufpu_stage[0].i_ufpu/U1392/ZN (NOR2_X1)            8.68      7.21      78.98 r
+  kufpu1/kufpu_stage[0].i_ufpu/n3759 (net)         1                   0.00      78.98 r
+  kufpu1/kufpu_stage[0].i_ufpu/U1391/Z (BUF_X2)             13.77     11.34      90.32 r
+  kufpu1/kufpu_stage[0].i_ufpu/n505 (net)         19                   0.00      90.32 r
+  kufpu1/kufpu_stage[0].i_ufpu/U655/ZN (INV_X1)             11.63      8.64      98.97 f
+  kufpu1/kufpu_stage[0].i_ufpu/n1900 (net)         8                   0.00      98.97 f
+  kufpu1/kufpu_stage[0].i_ufpu/U658/ZN (NOR2_X1)           154.61     76.29     175.26 r
+  kufpu1/kufpu_stage[0].i_ufpu/n3905 (net)        70                   0.00     175.26 r
+  kufpu1/kufpu_stage[0].i_ufpu/U657/Z (BUF_X2)              11.81     15.47     190.73 r
+  kufpu1/kufpu_stage[0].i_ufpu/n748 (net)         12                   0.00     190.73 r
+  kufpu1/kufpu_stage[0].i_ufpu/U209/ZN (INV_X1)             22.96     14.68     205.41 f
+  kufpu1/kufpu_stage[0].i_ufpu/n749 (net)         18                   0.00     205.41 f
+  kufpu1/kufpu_stage[0].i_ufpu/U210/ZN (NOR2_X1)           149.06     76.34     281.76 r
+  kufpu1/kufpu_stage[0].i_ufpu/n3553 (net)        68                   0.00     281.76 r
+  kufpu1/kufpu_stage[0].i_ufpu/U113/Z (BUF_X2)              38.64     29.94     311.69 r
+  kufpu1/kufpu_stage[0].i_ufpu/n897 (net)         56                   0.00     311.69 r
+  kufpu1/kufpu_stage[0].i_ufpu/U56/ZN (INV_X1)              23.43     17.23     328.92 f
+  kufpu1/kufpu_stage[0].i_ufpu/n898 (net)         14                   0.00     328.92 f
+  kufpu1/kufpu_stage[0].i_ufpu/U2669/ZN (OAI21_X1)           7.12      5.20     334.12 r
+  kufpu1/kufpu_stage[0].i_ufpu/n4596 (net)         1                   0.00     334.12 r
+  kufpu1/kufpu_stage[0].i_ufpu/U1863/ZN (AOI21_X1)          26.13      3.28     337.40 f
+  kufpu1/kufpu_stage[0].i_ufpu/n4595 (net)         1                   0.00     337.40 f
+  kufpu1/kufpu_stage[0].i_ufpu/U1861/ZN (NAND4_X1)           9.72      6.30     343.71 r
+  kufpu1/kufpu_stage[0].i_ufpu/n4571 (net)         1                   0.00     343.71 r
+  kufpu1/kufpu_stage[0].i_ufpu/U879/ZN (OAI21_X1)            5.20      3.68     347.39 f
+  kufpu1/kufpu_stage[0].i_ufpu/n7942 (net)         1                   0.00     347.39 f
+  kufpu1/kufpu_stage[0].i_ufpu/U878/ZN (INV_X1)              3.88      3.23     350.62 r
+  kufpu1/kufpu_stage[0].i_ufpu/n1608 (net)         2                   0.00     350.62 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/decode[42] (priority_encode_log_width128_log_width7_15)     0.00   350.62 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/decode[42] (net)          0.00     350.62 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C800/Z (OR2_X1)     2.07     3.67   354.29 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n388 (net)     1          0.00     354.29 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C926/Z (OR2_X1)     3.49     4.42   358.71 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n591 (net)     3          0.00     358.71 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C1034/Z (OR2_X1)     2.08     3.60   362.32 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n270 (net)     1          0.00     362.32 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C1086/Z (OR2_X1)     3.49     4.42   366.74 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n571 (net)     3          0.00     366.74 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C1114/Z (OR2_X1)     2.08     3.60   370.34 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n208 (net)     1          0.00     370.34 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C1126/Z (OR2_X1)     3.49     4.42   374.76 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n566 (net)     3          0.00     374.76 r
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/U123/ZN (INV_X1)     2.11     1.87   376.63 f
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/encode_reg[6] (net)     2     0.00   376.63 f
+  kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/encode_reg[6] (priority_encode_log_width128_log_width7_15)     0.00   376.63 f
+  kufpu1/kufpu_stage[0].i_ufpu/encode_1[6] (net)                       0.00     376.63 f
+  kufpu1/kufpu_stage[0].i_ufpu/U3945/ZN (AOI22_X1)           8.17      4.30     380.94 r
+  kufpu1/kufpu_stage[0].i_ufpu/n7701 (net)         1                   0.00     380.94 r
+  kufpu1/kufpu_stage[0].i_ufpu/U3944/ZN (INV_X1)             2.58      1.95     382.89 f
+  kufpu1/kufpu_stage[0].i_ufpu/n1554 (net)         1                   0.00     382.89 f
+  kufpu1/kufpu_stage[0].i_ufpu/encode_1_reg_reg[6]/D (DFFSNQ_X1)     2.58     0.00   382.89 f
+  data arrival time                                                          382.89
+
+  clock idealclock (rise edge)                                   1000.00    1000.00
+  clock network delay (ideal)                                       0.00    1000.00
+  kufpu1/kufpu_stage[0].i_ufpu/encode_1_reg_reg[6]/CLK (DFFSNQ_X1)     0.00    1000.00 r
+  library setup time                                               -8.46     991.54
+  data required time                                                         991.54
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                         991.54
+  data arrival time                                                         -382.89
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                608.65
+
+
+1

@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : area
+Design : smbm
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 20:00:07 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/dynamo/a/vshriva/Desktop/NanGate_15nm_OCL_fast.db)
+
+Number of ports:                         2489
+Number of nets:                         81847
+Number of cells:                        81285
+Number of combinational cells:          63736
+Number of sequential cells:             17546
+Number of macros/black boxes:               0
+Number of buf/inv:                       9569
+Number of references:                      25
+
+Combinational area:              18063.605873
+Buf/Inv area:                     1819.754498
+Noncombinational area:           11230.543491
+Macro/Black Box area:                0.000000
+
+Total cell area:                 29294.149363
+
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------------------
+smbm                              29294.1494    100.0  17839.4727  11230.5435  0.0000  smbm
+pri_encoder[0].i_pri_encoder         74.7110      0.3     74.7110      0.0000  0.0000  priority_encode_log_width128_log_width7_0
+pri_encoder[1].i_pri_encoder         74.7110      0.3     74.7110      0.0000  0.0000  priority_encode_log_width128_log_width7_2
+pri_encoder[2].i_pri_encoder         74.7110      0.3     74.7110      0.0000  0.0000  priority_encode_log_width128_log_width7_1
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------------------
+Total                                                  18063.6059  11230.5435  0.0000
+
+1

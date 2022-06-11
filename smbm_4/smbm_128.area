@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : area
+Design : smbm
+Version: L-2016.03-SP2
+Date   : Sun Jan 17 23:27:19 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/dynamo/a/vshriva/Desktop/NanGate_15nm_OCL_fast.db)
+
+Number of ports:                         2778
+Number of nets:                        129520
+Number of cells:                       128673
+Number of combinational cells:          99602
+Number of sequential cells:             29066
+Number of macros/black boxes:               0
+Number of buf/inv:                      14702
+Number of references:                      25
+
+Combinational area:              28127.674535
+Buf/Inv area:                     2954.526705
+Noncombinational area:           18604.129672
+Macro/Black Box area:                0.000000
+
+Total cell area:                 46731.804207
+
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------------------
+smbm                              46731.8042    100.0  27754.1193  18604.1297  0.0000  smbm
+pri_encoder[0].i_pri_encoder         74.7110      0.2     74.7110      0.0000  0.0000  priority_encode_log_width128_log_width7_0
+pri_encoder[1].i_pri_encoder         74.7110      0.2     74.7110      0.0000  0.0000  priority_encode_log_width128_log_width7_4
+pri_encoder[2].i_pri_encoder         74.7110      0.2     74.7110      0.0000  0.0000  priority_encode_log_width128_log_width7_3
+pri_encoder[3].i_pri_encoder         74.7110      0.2     74.7110      0.0000  0.0000  priority_encode_log_width128_log_width7_2
+pri_encoder[4].i_pri_encoder         74.7110      0.2     74.7110      0.0000  0.0000  priority_encode_log_width128_log_width7_1
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------------------
+Total                                                  28127.6745  18604.1297  0.0000
+
+1

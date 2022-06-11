@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : area
+Design : smbm
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 22:03:54 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/dynamo/a/vshriva/Desktop/NanGate_15nm_OCL_fast.db)
+
+Number of ports:                         6821
+Number of nets:                        499620
+Number of cells:                       496914
+Number of combinational cells:         383999
+Number of sequential cells:            112906
+Number of macros/black boxes:               0
+Number of buf/inv:                      59501
+Number of references:                      29
+
+Combinational area:             110965.752170
+Buf/Inv area:                    12528.009090
+Noncombinational area:           72257.664615
+Macro/Black Box area:                0.000000
+
+Total cell area:                183223.416785
+
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black-
+                                  Total        Total    national     national    boxes   Design
+--------------------------------  -----------  -------  -----------  ----------  ------  -----------------------------------------
+smbm                              183223.4168    100.0  109577.1590  72257.6646  0.0000  smbm
+pri_encoder[0].i_pri_encoder         154.2881      0.1     154.2881      0.0000  0.0000  priority_encode_log_width256_log_width8_0
+pri_encoder[1].i_pri_encoder         154.2881      0.1     154.2881      0.0000  0.0000  priority_encode_log_width256_log_width8_8
+pri_encoder[2].i_pri_encoder         154.2881      0.1     154.2881      0.0000  0.0000  priority_encode_log_width256_log_width8_7
+pri_encoder[3].i_pri_encoder         154.2881      0.1     154.2881      0.0000  0.0000  priority_encode_log_width256_log_width8_6
+pri_encoder[4].i_pri_encoder         154.2881      0.1     154.2881      0.0000  0.0000  priority_encode_log_width256_log_width8_5
+pri_encoder[5].i_pri_encoder         154.2881      0.1     154.2881      0.0000  0.0000  priority_encode_log_width256_log_width8_4
+pri_encoder[6].i_pri_encoder         154.2881      0.1     154.2881      0.0000  0.0000  priority_encode_log_width256_log_width8_3
+pri_encoder[7].i_pri_encoder         154.2881      0.1     154.2881      0.0000  0.0000  priority_encode_log_width256_log_width8_2
+pri_encoder[8].i_pri_encoder         154.2881      0.1     154.2881      0.0000  0.0000  priority_encode_log_width256_log_width8_1
+--------------------------------  -----------  -------  -----------  ----------  ------  -----------------------------------------
+Total                                                   110965.7522  72257.6646  0.0000
+
+1

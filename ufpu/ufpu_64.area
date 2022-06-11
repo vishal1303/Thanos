@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : ufpu
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 19:20:14 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/dynamo/a/vshriva/Desktop/NanGate_15nm_OCL_fast.db)
+
+Number of ports:                          345
+Number of nets:                          3752
+Number of cells:                         3467
+Number of combinational cells:           3128
+Number of sequential cells:               335
+Number of macros/black boxes:               0
+Number of buf/inv:                        699
+Number of references:                      26
+
+Combinational area:                873.431047
+Buf/Inv area:                      118.603778
+Noncombinational area:             213.417977
+Macro/Black Box area:                0.000000
+
+Total cell area:                  1086.849023
+
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ----------------------------------------
+ufpu                               1086.8490    100.0  791.5438   205.7503  0.0000  ufpu
+add_198_aco                          9.5355      0.9    9.5355     0.0000  0.0000  ufpu_DW01_inc_4
+lfsr                                11.2067      1.0    3.5389     7.6677  0.0000  LFSR_NUM_BITS6
+pri_encoder_1                       34.4064      3.2   34.4064     0.0000  0.0000  priority_encode_log_width64_log_width6_0
+pri_encoder_2                       34.4064      3.2   34.4064     0.0000  0.0000  priority_encode_log_width64_log_width6_1
+--------------------------------  ---------  -------  --------  ---------  ------  ----------------------------------------
+Total                                                 873.4310   213.4180  0.0000
+
+1

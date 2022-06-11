@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : bfpu
+Version: L-2016.03-SP2
+Date   : Mon Jan 31 22:46:26 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/dynamo/a/vshriva/Desktop/NanGate_15nm_OCL_fast.db)
+
+Number of ports:                          777
+Number of nets:                          3083
+Number of cells:                         2563
+Number of combinational cells:           2049
+Number of sequential cells:               514
+Number of macros/black boxes:               0
+Number of buf/inv:                        759
+Number of references:                      13
+
+Combinational area:                524.402692
+Buf/Inv area:                      131.383298
+Noncombinational area:             328.433653
+Macro/Black Box area:                0.000000
+
+Total cell area:                   852.836345
+
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+bfpu                                852.8363    100.0  524.4027   328.4337  0.0000  bfpu
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 524.4027   328.4337  0.0000
+
+1

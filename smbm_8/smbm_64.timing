@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : smbm
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 19:54:30 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: fast   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: id_list_reg[18][ptr][1][4]
+              (rising edge-triggered flip-flop clocked by idealclock)
+  Endpoint: metric_list_reg[1][33][ptr][0]
+            (rising edge-triggered flip-flop clocked by idealclock)
+  Path Group: idealclock
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock idealclock (rise edge)                                      0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  id_list_reg[18][ptr][1][4]/CLK (DFFSNQ_X1)              0.00      0.00 #     0.00 r
+  id_list_reg[18][ptr][1][4]/Q (DFFSNQ_X1)                5.91     12.64      12.64 f
+  id_list[18][ptr][1][4] (net)                  4                   0.00      12.64 f
+  U104349/ZN (AOI22_X1)                                   6.31      4.52      17.16 r
+  n57535 (net)                                  1                   0.00      17.16 r
+  U104350/ZN (NAND4_X1)                                   7.79      5.30      22.46 f
+  n57539 (net)                                  1                   0.00      22.46 f
+  U104351/ZN (AOI22_X1)                                   6.30      4.80      27.26 r
+  n57541 (net)                                  1                   0.00      27.26 r
+  U104352/ZN (NAND4_X1)                                 224.36    102.73     129.99 f
+  _cse_28[1][4] (net)                          60                   0.00     129.99 f
+  U122443/ZN (NOR4_X1)                                   32.16     33.07     163.06 r
+  n82065 (net)                                  1                   0.00     163.06 r
+  U122444/ZN (NOR2_X1)                                   10.33      4.81     167.88 f
+  N29091 (net)                                  2                   0.00     167.88 f
+  U59368/ZN (AOI21_X1)                                    5.51      4.29     172.17 r
+  n39967 (net)                                  1                   0.00     172.17 r
+  U59366/ZN (OAI21_X1)                                    7.92      3.81     175.98 f
+  n39938 (net)                                  1                   0.00     175.98 f
+  U59365/Z (BUF_X2)                                       9.37      9.37     185.35 f
+  n68987 (net)                                 14                   0.00     185.35 f
+  U88642/ZN (AOI22_X1)                                    6.27      5.41     190.76 r
+  n39963 (net)                                  1                   0.00     190.76 r
+  U88640/ZN (NAND2_X1)                                    3.41      2.59     193.34 f
+  n54700 (net)                                  1                   0.00     193.34 f
+  metric_list_reg[1][33][ptr][0]/D (DFFSNQ_X1)            3.41      0.00     193.34 f
+  data arrival time                                                          193.34
+
+  clock idealclock (rise edge)                                   1000.00    1000.00
+  clock network delay (ideal)                                       0.00    1000.00
+  metric_list_reg[1][33][ptr][0]/CLK (DFFSNQ_X1)                    0.00    1000.00 r
+  library setup time                                               -8.57     991.43
+  data required time                                                         991.43
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                         991.43
+  data arrival time                                                         -193.34
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                798.09
+
+
+1

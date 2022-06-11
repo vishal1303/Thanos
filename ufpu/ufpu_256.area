@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : ufpu
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 19:27:02 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/dynamo/a/vshriva/Desktop/NanGate_15nm_OCL_fast.db)
+
+Number of ports:                         1121
+Number of nets:                         17913
+Number of cells:                        17044
+Number of combinational cells:          15925
+Number of sequential cells:              1115
+Number of macros/black boxes:               0
+Number of buf/inv:                       3316
+Number of references:                      26
+
+Combinational area:               4409.720868
+Buf/Inv area:                      586.481670
+Noncombinational area:             711.819239
+Macro/Black Box area:                0.000000
+
+Total cell area:                  5121.540108
+
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  -----------------------------------------
+ufpu                               5121.5401    100.0  4086.2024   701.5956  0.0000  ufpu
+add_198_aco                          9.5355      0.2     9.5355     0.0000  0.0000  ufpu_DW01_inc_6
+lfsr                                15.6303      0.3     5.4067    10.2236  0.0000  LFSR_NUM_BITS8
+pri_encoder_1                      154.2881      3.0   154.2881     0.0000  0.0000  priority_encode_log_width256_log_width8_0
+pri_encoder_2                      154.2881      3.0   154.2881     0.0000  0.0000  priority_encode_log_width256_log_width8_1
+--------------------------------  ---------  -------  ---------  ---------  ------  -----------------------------------------
+Total                                                 4409.7209   711.8192  0.0000
+
+1

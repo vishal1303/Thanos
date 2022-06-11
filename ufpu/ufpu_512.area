@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : ufpu
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 20:36:33 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/dynamo/a/vshriva/Desktop/NanGate_15nm_OCL_fast.db)
+
+Number of ports:                         2149
+Number of nets:                         44987
+Number of cells:                        44167
+Number of combinational cells:          43092
+Number of sequential cells:              2145
+Number of macros/black boxes:               0
+Number of buf/inv:                       9849
+Number of references:                      27
+
+Combinational area:              11281.980302
+Buf/Inv area:                     4016.553958
+Noncombinational area:            1369.964497
+Macro/Black Box area:                0.000000
+
+Total cell area:                 12651.944799
+
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  -----------------------------------------
+ufpu                              12651.9448    100.0 10649.0991  1358.4629  0.0000  ufpu
+add_198_aco                           9.5355      0.0      9.5355     0.0000  0.0000  ufpu_DW01_inc_7
+lfsr                                 16.5151      0.1      5.0135    11.5016  0.0000  LFSR_NUM_BITS9
+pri_encoder_1                       309.1661      1.2    309.1661     0.0000  0.0000  priority_encode_log_width512_log_width9_0
+pri_encoder_2                       309.1661      1.2    309.1661     0.0000  0.0000  priority_encode_log_width512_log_width9_1
+--------------------------------  ----------  -------  ----------  ---------  ------  -----------------------------------------
+Total                                                  11281.9803  1369.9645  0.0000
+
+1

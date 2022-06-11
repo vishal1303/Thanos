@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : area
+Design : Cell
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 17:39:39 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/dynamo/a/vshriva/Desktop/NanGate_15nm_OCL_fast.db)
+
+Number of ports:                         9528
+Number of nets:                         55292
+Number of cells:                        46600
+Number of combinational cells:          36730
+Number of sequential cells:              9838
+Number of macros/black boxes:               0
+Number of buf/inv:                       8480
+Number of references:                       4
+
+Combinational area:              10328.997964
+Buf/Inv area:                     1518.206989
+Noncombinational area:            6277.300007
+Macro/Black Box area:                0.000000
+
+Total cell area:                 16606.297971
+
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  -----------------------------------------
+Cell                              16606.2980    100.0      0.0000     0.0000  0.0000  Cell
+bfpu1                                426.6394      2.6    261.7836   164.8558  0.0000  bfpu_0
+bfpu2                                426.6394      2.6    261.7836   164.8558  0.0000  bfpu_1
+kufpu1                              7876.5096     47.4      0.2458     0.0000  0.0000  kufpu_0
+kufpu1/kufpu_stage[0].i_delay         921.5508      5.5    182.8946   738.6562  0.0000  delay_0
+kufpu1/kufpu_stage[0].i_ufpu          2483.5031     15.0   1938.6532   371.8840  0.0000  ufpu_0
+kufpu1/kufpu_stage[0].i_ufpu/add_198_aco     9.5355     0.1     9.5355    0.0000 0.0000  ufpu_0_DW01_inc_5
+kufpu1/kufpu_stage[0].i_ufpu/lfsr       13.7134      0.1      4.7677     8.9457  0.0000  LFSR_NUM_BITS7_0
+kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1    74.8585     0.5    74.8585    0.0000 0.0000 priority_encode_log_width128_log_width7_0
+kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_2    74.8585     0.5    74.8585    0.0000 0.0000 priority_encode_log_width128_log_width7_7
+kufpu1/kufpu_stage[0].i_generator     520.4705      3.1    151.1424   369.3281  0.0000  generator_STAGE_NUM1_0
+kufpu1/kufpu_stage[1].i_delay         921.5508      5.5    182.8946   738.6562  0.0000  delay_3
+kufpu1/kufpu_stage[1].i_ufpu          2514.5672     15.1   1969.7173   371.8840  0.0000  ufpu_3
+kufpu1/kufpu_stage[1].i_ufpu/add_198_aco     9.5355     0.1     9.5355    0.0000 0.0000  ufpu_3_DW01_inc_5
+kufpu1/kufpu_stage[1].i_ufpu/lfsr       13.7134      0.1      4.7677     8.9457  0.0000  LFSR_NUM_BITS7_3
+kufpu1/kufpu_stage[1].i_ufpu/pri_encoder_1    74.8585     0.5    74.8585    0.0000 0.0000 priority_encode_log_width128_log_width7_6
+kufpu1/kufpu_stage[1].i_ufpu/pri_encoder_2    74.8585     0.5    74.8585    0.0000 0.0000 priority_encode_log_width128_log_width7_5
+kufpu1/kufpu_stage[1].i_generator     514.6214      3.1    149.1272   365.4943  0.0000  generator_STAGE_NUM2_0
+kufpu2                              7876.5096     47.4      0.2458     0.0000  0.0000  kufpu_1
+kufpu2/kufpu_stage[0].i_delay         921.5508      5.5    182.8946   738.6562  0.0000  delay_2
+kufpu2/kufpu_stage[0].i_ufpu          2483.5031     15.0   1938.6532   371.8840  0.0000  ufpu_2
+kufpu2/kufpu_stage[0].i_ufpu/add_198_aco     9.5355     0.1     9.5355    0.0000 0.0000  ufpu_2_DW01_inc_5
+kufpu2/kufpu_stage[0].i_ufpu/lfsr       13.7134      0.1      4.7677     8.9457  0.0000  LFSR_NUM_BITS7_2
+kufpu2/kufpu_stage[0].i_ufpu/pri_encoder_1    74.8585     0.5    74.8585    0.0000 0.0000 priority_encode_log_width128_log_width7_4
+kufpu2/kufpu_stage[0].i_ufpu/pri_encoder_2    74.8585     0.5    74.8585    0.0000 0.0000 priority_encode_log_width128_log_width7_3
+kufpu2/kufpu_stage[0].i_generator     520.4705      3.1    151.1424   369.3281  0.0000  generator_STAGE_NUM1_1
+kufpu2/kufpu_stage[1].i_delay         921.5508      5.5    182.8946   738.6562  0.0000  delay_1
+kufpu2/kufpu_stage[1].i_ufpu          2514.5672     15.1   1969.7173   371.8840  0.0000  ufpu_1
+kufpu2/kufpu_stage[1].i_ufpu/add_198_aco     9.5355     0.1     9.5355    0.0000 0.0000  ufpu_1_DW01_inc_5
+kufpu2/kufpu_stage[1].i_ufpu/lfsr       13.7134      0.1      4.7677     8.9457  0.0000  LFSR_NUM_BITS7_1
+kufpu2/kufpu_stage[1].i_ufpu/pri_encoder_1    74.8585     0.5    74.8585    0.0000 0.0000 priority_encode_log_width128_log_width7_2
+kufpu2/kufpu_stage[1].i_ufpu/pri_encoder_2    74.8585     0.5    74.8585    0.0000 0.0000 priority_encode_log_width128_log_width7_1
+kufpu2/kufpu_stage[1].i_generator     514.6214      3.1    149.1272   365.4943  0.0000  generator_STAGE_NUM2_1
+--------------------------------  ----------  -------  ----------  ---------  ------  -----------------------------------------
+Total                                                  10328.9980  6277.3000  0.0000
+
+1

@@ -1,0 +1,42 @@
+Loading db file '/home/dynamo/a/vshriva/Desktop/NanGate_15nm_OCL_fast.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : smbm
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 20:00:20 2021
+****************************************
+
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/dynamo/a/vshriva/Desktop/NanGate_15nm_OCL_fast.db)
+
+
+Operating Conditions: fast   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 0.88 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+smbm                                      0.835   21.096 3.88e+08   22.319 100.0
+  pri_encoder[2].i_pri_encoder (priority_encode_log_width128_log_width7_1) 5.96e-06 1.54e-05 1.40e+06 1.43e-03   0.0
+  pri_encoder[1].i_pri_encoder (priority_encode_log_width128_log_width7_2) 6.20e-06 1.60e-05 1.40e+06 1.43e-03   0.0
+  pri_encoder[0].i_pri_encoder (priority_encode_log_width128_log_width7_0) 8.21e-05 5.19e-05 1.40e+06 1.54e-03   0.0
+1

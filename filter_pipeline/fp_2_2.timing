@@ -1,0 +1,108 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : fp
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 17:59:07 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: fast   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/last_id_reg[1]
+              (rising edge-triggered flip-flop clocked by idealclock)
+  Endpoint: fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/encode_1_reg_reg[6]
+            (rising edge-triggered flip-flop clocked by idealclock)
+  Path Group: idealclock
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock idealclock (rise edge)                                      0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/last_id_reg[1]/CLK (DFFSNQ_X1)     0.00     0.00 #     0.00 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/last_id_reg[1]/Q (DFFSNQ_X1)    76.80    47.59    47.59 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/N19809 (net)    54     0.00    47.59 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U5062/ZN (INV_X1)    34.49    24.17    71.77 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n1051 (net)    16     0.00    71.77 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U2848/ZN (NOR2_X1)     8.68     7.21    78.98 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n3759 (net)     1     0.00    78.98 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U2847/Z (BUF_X2)    13.77    11.34    90.32 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n609 (net)    19     0.00    90.32 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U852/ZN (INV_X1)    11.63     8.64    98.97 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n2005 (net)     8     0.00    98.97 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U860/ZN (NOR2_X1)   154.67    76.29   175.26 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n3905 (net)    70     0.00   175.26 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U859/Z (BUF_X2)    11.81    15.47   190.73 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n853 (net)    12     0.00   190.73 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U212/ZN (INV_X1)    22.96    14.68   205.41 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n854 (net)    18     0.00   205.41 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U213/ZN (NOR2_X1)   153.06    78.25   283.67 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n3553 (net)    70     0.00   283.67 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U114/Z (BUF_X2)    37.47    29.38   313.04 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n1001 (net)    54     0.00   313.04 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U55/ZN (INV_X1)    23.15    17.05   330.10 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n1002 (net)    14     0.00   330.10 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U2072/ZN (OAI21_X1)     7.08     5.18   335.27 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n4596 (net)     1     0.00   335.27 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U1364/ZN (AOI21_X1)    25.62     3.27   338.55 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n4595 (net)     1     0.00   338.55 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U1362/ZN (NAND4_X1)     9.59     6.25   344.80 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n4571 (net)     1     0.00   344.80 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U630/ZN (OAI21_X1)     5.21     3.67   348.46 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n7942 (net)     1     0.00   348.46 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U629/ZN (INV_X1)     3.88     3.24   351.70 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n1713 (net)     2     0.00   351.70 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/decode[42] (priority_encode_log_width128_log_width7_31)     0.00   351.70 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/decode[42] (net)     0.00   351.70 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C800/Z (OR2_X1)     2.07     3.67   355.37 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n388 (net)     1     0.00   355.37 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C926/Z (OR2_X1)     3.49     4.42   359.80 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n591 (net)     3     0.00   359.80 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C1034/Z (OR2_X1)     2.08     3.60   363.40 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n270 (net)     1     0.00   363.40 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C1086/Z (OR2_X1)     3.49     4.42   367.82 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n571 (net)     3     0.00   367.82 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C1114/Z (OR2_X1)     2.08     3.60   371.42 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n208 (net)     1     0.00   371.42 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/C1126/Z (OR2_X1)     3.49     4.42   375.84 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/n566 (net)     3     0.00   375.84 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/U127/ZN (INV_X1)     2.11     1.87   377.71 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/encode_reg[6] (net)     2     0.00   377.71 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/pri_encoder_1/encode_reg[6] (priority_encode_log_width128_log_width7_31)     0.00   377.71 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/encode_1[6] (net)     0.00   377.71 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U5075/ZN (AOI22_X1)     6.88     4.30   382.02 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n7701 (net)     1     0.00   382.02 r
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/U5074/ZN (INV_X1)     2.36     1.86   383.88 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/n1659 (net)     1     0.00   383.88 f
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/encode_1_reg_reg[6]/D (DFFSNQ_X1)     2.36     0.00   383.88 f
+  data arrival time                                                          383.88
+
+  clock idealclock (rise edge)                                   1000.00    1000.00
+  clock network delay (ideal)                                       0.00    1000.00
+  fp_stage[0].genblk1.i_cell/kufpu1/kufpu_stage[0].i_ufpu/encode_1_reg_reg[6]/CLK (DFFSNQ_X1)     0.00  1000.00 r
+  library setup time                                               -8.43     991.57
+  data required time                                                         991.57
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                         991.57
+  data arrival time                                                         -383.88
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                607.69
+
+
+1

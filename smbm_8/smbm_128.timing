@@ -1,0 +1,88 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : smbm
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 20:49:37 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: fast   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: curr_state_reg[1]
+              (rising edge-triggered flip-flop clocked by idealclock)
+  Endpoint: id_list_reg[0][ptr][0][0]
+            (rising edge-triggered flip-flop clocked by idealclock)
+  Path Group: idealclock
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock idealclock (rise edge)                                      0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  curr_state_reg[1]/CLK (DFFSNQ_X1)                       0.00      0.00 #     0.00 r
+  curr_state_reg[1]/Q (DFFSNQ_X1)                         6.50     11.47      11.47 r
+  curr_state[1] (net)                           4                   0.00      11.47 r
+  U144777/ZN (INV_X1)                                     5.64      4.40      15.87 f
+  n192818 (net)                                 4                   0.00      15.87 f
+  U144776/ZN (NOR3_X1)                                   30.75     16.21      32.08 r
+  n37962 (net)                                  8                   0.00      32.08 r
+  U142974/Z (BUF_X2)                                      3.83      7.94      40.02 r
+  n163311 (net)                                 3                   0.00      40.02 r
+  U141293/Z (BUF_X2)                                      3.05      4.76      44.78 r
+  n163309 (net)                                 3                   0.00      44.78 r
+  U140195/Z (BUF_X2)                                      4.94      5.69      50.47 r
+  n163538 (net)                                 6                   0.00      50.47 r
+  U131664/ZN (INV_X1)                                    16.21      9.88      60.35 f
+  n163323 (net)                                13                   0.00      60.35 f
+  U144791/ZN (NOR2_X1)                                    6.23      5.10      65.45 r
+  n54940 (net)                                  1                   0.00      65.45 r
+  U144790/Z (BUF_X2)                                      4.53      6.06      71.51 r
+  n160222 (net)                                 5                   0.00      71.51 r
+  U142975/Z (BUF_X2)                                     10.32      8.85      80.35 r
+  n160217 (net)                                13                   0.00      80.35 r
+  U141304/Z (BUF_X2)                                      3.11      5.84      86.19 r
+  n160264 (net)                                 3                   0.00      86.19 r
+  U140210/ZN (NAND4_X1)                                   8.83      5.13      91.32 f
+  n54939 (net)                                  1                   0.00      91.32 f
+  U140209/ZN (NAND2_X1)                                  90.82     48.68     140.00 r
+  n54875 (net)                                 64                   0.00     140.00 r
+  U254476/ZN (INV_X1)                                    16.02      6.44     146.44 f
+  n160327 (net)                                 2                   0.00     146.44 f
+  U132138/ZN (NOR3_X1)                                  197.15     93.95     240.40 r
+  n54876 (net)                                 64                   0.00     240.40 r
+  U214607/ZN (AOI22_X1)                                  35.07     14.81     255.21 f
+  n54938 (net)                                  1                   0.00     255.21 f
+  U214605/ZN (OAI21_X1)                                   9.79      6.25     261.45 r
+  n105093 (net)                                 1                   0.00     261.45 r
+  id_list_reg[0][ptr][0][0]/D (DFFSNQ_X1)                 9.79      0.00     261.45 r
+  data arrival time                                                          261.45
+
+  clock idealclock (rise edge)                                   1000.00    1000.00
+  clock network delay (ideal)                                       0.00    1000.00
+  id_list_reg[0][ptr][0][0]/CLK (DFFSNQ_X1)                         0.00    1000.00 r
+  library setup time                                               -8.52     991.48
+  data required time                                                         991.48
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                         991.48
+  data arrival time                                                         -261.45
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                730.02
+
+
+1

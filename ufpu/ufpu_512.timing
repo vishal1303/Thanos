@@ -1,0 +1,152 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : ufpu
+Version: L-2016.03-SP2
+Date   : Mon Jan 18 20:36:38 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: fast   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: last_id_reg[1]
+              (rising edge-triggered flip-flop clocked by idealclock)
+  Endpoint: encode_1_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by idealclock)
+  Path Group: idealclock
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock idealclock (rise edge)                                      0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  last_id_reg[1]/CLK (DFFSNQ_X1)                          0.00      0.00 #     0.00 r
+  last_id_reg[1]/Q (DFFSNQ_X1)                          126.37     72.91      72.91 r
+  N280261 (net)                                93                   0.00      72.91 r
+  U71842/ZN (INV_X1)                                     37.83     22.98      95.89 f
+  n97599 (net)                                 11                   0.00      95.89 f
+  U113382/ZN (INV_X1)                                   101.14     60.85     156.74 r
+  n97596 (net)                                 74                   0.00     156.74 r
+  U113679/ZN (NOR2_X1)                                   24.00     10.15     166.89 f
+  n30271 (net)                                  3                   0.00     166.89 f
+  U92696/Z (BUF_X2)                                       6.45      9.93     176.82 f
+  n87249 (net)                                  9                   0.00     176.82 f
+  U84959/ZN (NAND2_X1)                                   86.22     45.90     222.72 r
+  n20763 (net)                                 65                   0.00     222.72 r
+  U84958/Z (BUF_X2)                                       5.66     10.59     233.31 r
+  n87504 (net)                                  4                   0.00     233.31 r
+  U83666/ZN (INV_X1)                                      7.93      5.61     238.92 f
+  n87506 (net)                                  6                   0.00     238.92 f
+  U83668/ZN (NAND2_X1)                                    7.93      2.94     241.87 r
+  n17957 (net)                                  1                   0.00     241.87 r
+  U83667/Z (BUF_X2)                                       6.01      7.17     249.03 r
+  n91209 (net)                                  7                   0.00     249.03 r
+  U81703/Z (BUF_X2)                                       3.09      5.20     254.24 r
+  n91202 (net)                                  3                   0.00     254.24 r
+  U79806/Z (BUF_X2)                                       2.30      4.16     258.40 r
+  n91199 (net)                                  2                   0.00     258.40 r
+  U77025/Z (BUF_X2)                                       8.67      7.54     265.94 r
+  n91310 (net)                                 12                   0.00     265.94 r
+  U73427/ZN (INV_X1)                                     16.22     10.60     276.54 f
+  n91210 (net)                                 13                   0.00     276.54 f
+  U77031/ZN (NAND2_X1)                                   36.50     22.77     299.30 r
+  n18248 (net)                                 26                   0.00     299.30 r
+  U73430/Z (BUF_X2)                                       8.61     10.97     310.27 r
+  n88616 (net)                                 11                   0.00     310.27 r
+  U71988/ZN (INV_X1)                                     35.09     20.39     330.66 f
+  n88618 (net)                                 29                   0.00     330.66 f
+  U71862/ZN (INV_X1)                                     25.53     19.40     350.06 r
+  n88617 (net)                                 15                   0.00     350.06 r
+  U113694/ZN (OAI22_X1)                                  18.09      5.84     355.90 f
+  n20420 (net)                                  1                   0.00     355.90 f
+  U92460/ZN (NOR4_X1)                                    10.09      6.68     362.58 r
+  n20404 (net)                                  1                   0.00     362.58 r
+  U92458/ZN (NAND4_X1)                                    8.30      5.39     367.97 f
+  n20364 (net)                                  1                   0.00     367.97 f
+  U84849/ZN (NOR4_X1)                                     9.00      6.19     374.16 r
+  n20361 (net)                                  1                   0.00     374.16 r
+  U84846/ZN (NAND4_X1)                                    7.74      5.15     379.31 f
+  n20180 (net)                                  1                   0.00     379.31 f
+  U92421/ZN (NOR4_X1)                                     8.71      5.27     384.58 r
+  n20176 (net)                                  1                   0.00     384.58 r
+  U92414/ZN (OAI22_X1)                                    7.66      5.71     390.29 f
+  pri_encode_bit_vec_1[6] (net)                 2                   0.00     390.29 f
+  pri_encoder_1/decode[6] (priority_encode_log_width512_log_width9_0)     0.00   390.29 f
+  pri_encoder_1/decode[6] (net)                                     0.00     390.29 f
+  pri_encoder_1/U400/ZN (NOR2_X1)                         4.22      3.56     393.85 r
+  pri_encoder_1/n1192 (net)                     1                   0.00     393.85 r
+  pri_encoder_1/U398/ZN (NAND4_X1)                       23.60     11.79     405.65 f
+  pri_encoder_1/n437 (net)                      5                   0.00     405.65 f
+  pri_encoder_1/U37/ZN (NOR2_X1)                         11.77      9.20     414.85 r
+  pri_encoder_1/n526 (net)                      3                   0.00     414.85 r
+  pri_encoder_1/U3/ZN (INV_X1)                            4.76      3.57     418.42 f
+  pri_encoder_1/n12 (net)                       2                   0.00     418.42 f
+  pri_encoder_1/U977/ZN (NOR4_X1)                        29.11     13.74     432.16 r
+  pri_encoder_1/n436 (net)                      6                   0.00     432.16 r
+  pri_encoder_1/U403/ZN (INV_X1)                          9.51      6.33     438.49 f
+  pri_encoder_1/n11 (net)                       3                   0.00     438.49 f
+  pri_encoder_1/U978/ZN (NOR4_X1)                        20.79     11.08     449.56 r
+  pri_encoder_1/n519 (net)                      4                   0.00     449.56 r
+  pri_encoder_1/U402/ZN (NAND2_X1)                       12.35      8.87     458.44 f
+  pri_encoder_1/n359 (net)                      4                   0.00     458.44 f
+  pri_encoder_1/U981/ZN (NOR4_X1)                         9.55      6.72     465.16 r
+  pri_encoder_1/n327 (net)                      1                   0.00     465.16 r
+  pri_encoder_1/U980/Z (BUF_X2)                           6.90      7.85     473.00 r
+  pri_encoder_1/n1 (net)                        9                   0.00     473.00 r
+  pri_encoder_1/U404/ZN (INV_X1)                          6.94      5.20     478.21 f
+  pri_encoder_1/n10 (net)                       5                   0.00     478.21 f
+  pri_encoder_1/U39/ZN (NOR2_X1)                         10.56      5.79     484.00 r
+  pri_encoder_1/n360 (net)                      3                   0.00     484.00 r
+  pri_encoder_1/U415/ZN (NAND4_X1)                       11.30      5.66     489.65 f
+  pri_encoder_1/n328 (net)                      1                   0.00     489.65 f
+  pri_encoder_1/U414/Z (BUF_X2)                           6.30      8.23     497.88 f
+  pri_encoder_1/n2 (net)                        9                   0.00     497.88 f
+  pri_encoder_1/U41/ZN (INV_X1)                           7.20      5.35     503.24 r
+  pri_encoder_1/n9 (net)                        5                   0.00     503.24 r
+  pri_encoder_1/U974/ZN (NAND4_X1)                       32.33     14.42     517.65 f
+  pri_encoder_1/n332 (net)                      7                   0.00     517.65 f
+  pri_encoder_1/U401/ZN (INV_X1)                         14.48     11.36     529.02 r
+  pri_encoder_1/encode_reg[8] (net)             6                   0.00     529.02 r
+  pri_encoder_1/U40/ZN (NOR2_X1)                          8.51      6.49     535.51 f
+  pri_encoder_1/n321 (net)                      4                   0.00     535.51 f
+  pri_encoder_1/U410/ZN (AOI22_X1)                        5.68      4.78     540.29 r
+  pri_encoder_1/n832 (net)                      1                   0.00     540.29 r
+  pri_encoder_1/U1129/ZN (NAND2_X1)                       3.90      2.97     543.26 f
+  pri_encoder_1/encode_reg[0] (net)             1                   0.00     543.26 f
+  pri_encoder_1/encode_reg[0] (priority_encode_log_width512_log_width9_0)     0.00   543.26 f
+  encode_1[0] (net)                                                 0.00     543.26 f
+  U138629/ZN (AOI22_X1)                                   8.88      4.64     547.90 r
+  n76393 (net)                                  1                   0.00     547.90 r
+  U138628/ZN (INV_X1)                                     2.69      1.99     549.89 f
+  n99300 (net)                                  1                   0.00     549.89 f
+  encode_1_reg_reg[0]/D (DFFSNQ_X1)                       2.69      0.00     549.89 f
+  data arrival time                                                          549.89
+
+  clock idealclock (rise edge)                                   1000.00    1000.00
+  clock network delay (ideal)                                       0.00    1000.00
+  encode_1_reg_reg[0]/CLK (DFFSNQ_X1)                               0.00    1000.00 r
+  library setup time                                               -8.48     991.52
+  data required time                                                         991.52
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                         991.52
+  data arrival time                                                         -549.89
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                441.63
+
+
+1
